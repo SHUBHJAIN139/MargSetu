@@ -1,0 +1,175 @@
+{
+  "type": "FeatureCollection",
+  "name": "MargSetu_Northeast_Lifeline_Corridors",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": "C1",
+      "properties": {
+        "corridor_id": "C1",
+        "corridor_name": "NH-6 Guwahati-Silchar via Sonapur Tunnel",
+        "highway_code": "NH-6",
+        "base_distance_km": 310.0,
+        "base_transit_time_hrs": 9.5,
+        "origin": "Guwahati",
+        "destination": "Silchar",
+        "honesty_label": "VERIFIED STATIC",
+        "authority_notice": "SIMULATION — not connected to official NDMA systems",
+        "critical_chokepoints": [
+          {
+            "name": "Sonapur Tunnel",
+            "coordinates": [92.3654, 25.1147],
+            "hazard_type": "landslide_mudflow_blockage",
+            "vulnerability_score": 9.2
+          },
+          {
+            "name": "Khliehriat Slide Zone",
+            "coordinates": [92.3643, 25.3524],
+            "hazard_type": "rockfall",
+            "vulnerability_score": 7.8
+          }
+        ],
+        "waypoints": [
+          {"name": "Guwahati", "coordinates": [91.7362, 26.1445]},
+          {"name": "Nongpoh", "coordinates": [91.8803, 25.9015]},
+          {"name": "Shillong", "coordinates": [91.8933, 25.5788]},
+          {"name": "Jowai", "coordinates": [92.2033, 25.4411]},
+          {"name": "Khliehriat", "coordinates": [92.3643, 25.3524]},
+          {"name": "Sonapur Tunnel", "coordinates": [92.3654, 25.1147]},
+          {"name": "Badarpur", "coordinates": [92.5768, 24.8966]},
+          {"name": "Silchar", "coordinates": [92.7976, 24.8333]}
+        ]
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [91.7362, 26.1445],
+          [91.7820, 26.0821],
+          [91.8803, 25.9015],
+          [91.8741, 25.7532],
+          [91.8933, 25.5788],
+          [92.0124, 25.5012],
+          [92.2033, 25.4411],
+          [92.3112, 25.3910],
+          [92.3643, 25.3524],
+          [92.3654, 25.1147],
+          [92.4215, 25.0124],
+          [92.5110, 24.9541],
+          [92.5768, 24.8966],
+          [92.6841, 24.8510],
+          [92.7976, 24.8333]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "C2",
+      "properties": {
+        "corridor_id": "C2",
+        "corridor_name": "NH-27 Detour via Haflong Bypass",
+        "highway_code": "NH-27",
+        "base_distance_km": 352.0,
+        "base_transit_time_hrs": 11.0,
+        "origin": "Guwahati",
+        "destination": "Silchar",
+        "honesty_label": "VERIFIED STATIC",
+        "authority_notice": "SIMULATION — not connected to official NDMA systems",
+        "critical_chokepoints": [
+          {
+            "name": "Haflong Hill Bypass",
+            "coordinates": [93.0245, 25.1667],
+            "hazard_type": "subsidence_slope_failure",
+            "vulnerability_score": 6.5
+          },
+          {
+            "name": "Lumding Forest Corridor",
+            "coordinates": [93.1706, 25.7533],
+            "hazard_type": "flash_flood_waterlogging",
+            "vulnerability_score": 5.1
+          }
+        ],
+        "waypoints": [
+          {"name": "Guwahati", "coordinates": [91.7362, 26.1445]},
+          {"name": "Jagiroad", "coordinates": [92.2133, 26.1264]},
+          {"name": "Nagaon", "coordinates": [92.6841, 26.3452]},
+          {"name": "Dabaka", "coordinates": [92.8687, 26.0121]},
+          {"name": "Lumding", "coordinates": [93.1706, 25.7533]},
+          {"name": "Maibang", "coordinates": [93.1610, 25.3015]},
+          {"name": "Haflong Bypass", "coordinates": [93.0245, 25.1667]},
+          {"name": "Silchar", "coordinates": [92.7976, 24.8333]}
+        ]
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [91.7362, 26.1445],
+          [91.9542, 26.1320],
+          [92.2133, 26.1264],
+          [92.4512, 26.2150],
+          [92.6841, 26.3452],
+          [92.7812, 26.1820],
+          [92.8687, 26.0121],
+          [93.0415, 25.8752],
+          [93.1706, 25.7533],
+          [93.1845, 25.5210],
+          [93.1610, 25.3015],
+          [93.0245, 25.1667],
+          [92.8950, 25.0120],
+          [92.7976, 24.8333]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "C3",
+      "properties": {
+        "corridor_id": "C3",
+        "corridor_name": "NH-27 West Lifeline Reference (Siliguri-Guwahati)",
+        "highway_code": "NH-27",
+        "base_distance_km": 440.0,
+        "base_transit_time_hrs": 10.5,
+        "origin": "Siliguri",
+        "destination": "Guwahati",
+        "honesty_label": "VERIFIED STATIC",
+        "authority_notice": "SIMULATION — not connected to official NDMA systems",
+        "critical_chokepoints": [
+          {
+            "name": "Brahmaputra Floodplain Crossing",
+            "coordinates": [90.5434, 26.5028],
+            "hazard_type": "floodplain_inundation",
+            "vulnerability_score": 4.8
+          }
+        ],
+        "waypoints": [
+          {"name": "Siliguri", "coordinates": [88.4270, 26.7271]},
+          {"name": "Jalpaiguri", "coordinates": [88.7289, 26.5218]},
+          {"name": "Alipurduar", "coordinates": [89.5247, 26.4919]},
+          {"name": "Bongaigaon", "coordinates": [90.5434, 26.5028]},
+          {"name": "Goalpara", "coordinates": [90.6247, 26.1772]},
+          {"name": "Guwahati", "coordinates": [91.7362, 26.1445]}
+        ]
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [88.4270, 26.7271],
+          [88.5821, 26.6110],
+          [88.7289, 26.5218],
+          [89.1510, 26.5050],
+          [89.5247, 26.4919],
+          [89.9820, 26.4510],
+          [90.5434, 26.5028],
+          [90.6247, 26.1772],
+          [91.1520, 26.1150],
+          [91.7362, 26.1445]
+        ]
+      }
+    }
+  ]
+}

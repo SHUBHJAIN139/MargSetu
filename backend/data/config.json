@@ -1,0 +1,96 @@
+{
+  "system": {
+    "name": "MargSetu Core Engine",
+    "version": "2.0.0",
+    "authority": "NDMA",
+    "disclaimer": "SIMULATION — not connected to official NDMA systems",
+    "honesty_label": "VERIFIED STATIC",
+    "region": "Northeast India (Guwahati - Silchar Lifeline Corridor)"
+  },
+  "seasonal_weights": {
+    "factors": [
+      "rain",
+      "slope",
+      "soil",
+      "crowd",
+      "hist"
+    ],
+    "monsoon": {
+      "weights": [0.40, 0.30, 0.15, 0.10, 0.05],
+      "rain": 0.40,
+      "slope": 0.30,
+      "soil": 0.15,
+      "crowd": 0.10,
+      "hist": 0.05
+    },
+    "post_monsoon": {
+      "weights": [0.25, 0.35, 0.20, 0.10, 0.10],
+      "rain": 0.25,
+      "slope": 0.35,
+      "soil": 0.20,
+      "crowd": 0.10,
+      "hist": 0.10
+    },
+    "winter": {
+      "weights": [0.15, 0.25, 0.10, 0.10, 0.40],
+      "rain": 0.15,
+      "slope": 0.25,
+      "soil": 0.10,
+      "crowd": 0.10,
+      "hist": 0.40
+    },
+    "pre_monsoon": {
+      "weights": [0.30, 0.30, 0.15, 0.15, 0.10],
+      "rain": 0.30,
+      "slope": 0.30,
+      "soil": 0.15,
+      "crowd": 0.15,
+      "hist": 0.10
+    }
+  },
+  "risk_thresholds": {
+    "green_max": 4.0,
+    "amber_max": 6.0,
+    "red_min": 6.0,
+    "emergency_purple_allowed": true
+  },
+  "vehicle_modifiers": {
+    "heavy_freight": {
+      "risk_modifier": 0.5,
+      "speed_multiplier": 0.75,
+      "fuel_rate_l_per_km": 0.35
+    },
+    "commercial_light": {
+      "risk_modifier": 0.0,
+      "speed_multiplier": 1.0,
+      "fuel_rate_l_per_km": 0.12
+    },
+    "emergency": {
+      "risk_modifier": -1.5,
+      "speed_multiplier": 1.25,
+      "fuel_rate_l_per_km": 0.16
+    },
+    "two_wheeler": {
+      "risk_modifier": 0.0,
+      "speed_multiplier": 0.95,
+      "fuel_rate_l_per_km": 0.035
+    }
+  },
+  "hard_veto_thresholds": {
+    "rainfall_mm_threshold": 75.0,
+    "slope_deg_threshold": 30.0,
+    "combined_compound_hazard_rule": "rainfall_mm > 75 AND slope_deg > 30",
+    "verified_crowd_incidents_threshold": 3,
+    "ndma_override_enabled": true
+  },
+  "edge_cost_parameters": {
+    "formula": "distance_km * (1 + exp(Ri / 2.5))",
+    "divisor": 2.5,
+    "base_multiplier": 1.0
+  },
+  "fuel_and_carbon": {
+    "diesel_co2_kg_per_liter": 2.68,
+    "petrol_co2_kg_per_liter": 2.31,
+    "elevation_penalty_per_1000m": 0.15
+  }
+}

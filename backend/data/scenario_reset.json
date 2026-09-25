@@ -1,0 +1,132 @@
+{
+  "scenario_name": "baseline_northeast_monsoon",
+  "system": {
+    "name": "MargSetu Core Engine",
+    "version": "2.0.0",
+    "authority": "NDMA",
+    "disclaimer": "SIMULATION — not connected to official NDMA systems",
+    "honesty_label": "VERIFIED STATIC",
+    "reset_timestamp": "2026-09-19T00:00:00Z"
+  },
+  "baseline_weather": [
+    {
+      "station_name": "Guwahati Central",
+      "location": {
+        "latitude": 26.1445,
+        "longitude": 91.7362,
+        "accuracy_m": 5.0,
+        "elevation_m": 55.0,
+        "landmark_name": "Guwahati Node"
+      },
+      "rainfall_24h_mm": 24.5,
+      "current_precipitation_rate_mmh": 2.0,
+      "wind_speed_kmh": 14.0,
+      "visibility_km": 8.0,
+      "honesty_label": "VERIFIED STATIC",
+      "authority_notice": "SIMULATION — not connected to official NDMA systems"
+    },
+    {
+      "station_name": "Shillong Peak Weather Cell",
+      "location": {
+        "latitude": 25.5788,
+        "longitude": 91.8933,
+        "accuracy_m": 5.0,
+        "elevation_m": 1525.0,
+        "landmark_name": "Shillong Bypass"
+      },
+      "rainfall_24h_mm": 52.0,
+      "current_precipitation_rate_mmh": 6.5,
+      "wind_speed_kmh": 22.0,
+      "visibility_km": 4.5,
+      "honesty_label": "VERIFIED STATIC",
+      "authority_notice": "SIMULATION — not connected to official NDMA systems"
+    },
+    {
+      "station_name": "Sonapur Tunnel Monitoring Station",
+      "location": {
+        "latitude": 25.1147,
+        "longitude": 92.3654,
+        "accuracy_m": 5.0,
+        "elevation_m": 480.0,
+        "landmark_name": "Sonapur Tunnel Chokepoint"
+      },
+      "rainfall_24h_mm": 68.0,
+      "current_precipitation_rate_mmh": 8.0,
+      "wind_speed_kmh": 18.0,
+      "visibility_km": 3.0,
+      "honesty_label": "VERIFIED STATIC",
+      "authority_notice": "SIMULATION — not connected to official NDMA systems"
+    },
+    {
+      "station_name": "Haflong Hill Station",
+      "location": {
+        "latitude": 25.1667,
+        "longitude": 93.0245,
+        "accuracy_m": 5.0,
+        "elevation_m": 680.0,
+        "landmark_name": "Haflong Bypass Junction"
+      },
+      "rainfall_24h_mm": 35.0,
+      "current_precipitation_rate_mmh": 3.2,
+      "wind_speed_kmh": 12.0,
+      "visibility_km": 7.0,
+      "honesty_label": "VERIFIED STATIC",
+      "authority_notice": "SIMULATION — not connected to official NDMA systems"
+    },
+    {
+      "station_name": "Silchar Terminal Station",
+      "location": {
+        "latitude": 24.8333,
+        "longitude": 92.7976,
+        "accuracy_m": 5.0,
+        "elevation_m": 25.0,
+        "landmark_name": "Silchar Barak Valley Node"
+      },
+      "rainfall_24h_mm": 18.0,
+      "current_precipitation_rate_mmh": 1.5,
+      "wind_speed_kmh": 10.0,
+      "visibility_km": 9.0,
+      "honesty_label": "VERIFIED STATIC",
+      "authority_notice": "SIMULATION — not connected to official NDMA systems"
+    }
+  ],
+  "baseline_incidents": [
+    {
+      "id": "inc-sonapur-001",
+      "user_id_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "location": {
+        "latitude": 25.1147,
+        "longitude": 92.3654,
+        "accuracy_m": 5.0,
+        "elevation_m": 480.0,
+        "landmark_name": "Sonapur Tunnel North Portal"
+      },
+      "incident_type": "rockfall",
+      "vehicle_type": "commercial_light",
+      "timestamp": "2026-09-19T00:00:00Z",
+      "severity": "MEDIUM",
+      "is_blocked": false,
+      "clearance_eta_hours": 1.5,
+      "verified_count": 2,
+      "honesty_label": "VERIFIED STATIC",
+      "authority_notice": "SIMULATION — not connected to official NDMA systems"
+    }
+  ],
+  "corridor_statuses": {
+    "C1": {
+      "status": "CAUTION_OPERATIONAL",
+      "is_blocked": false,
+      "advisory": "Sonapur Tunnel active rockfall monitoring in effect; slow speed advised."
+    },
+    "C2": {
+      "status": "ALL_CLEAR",
+      "is_blocked": false,
+      "advisory": "NH-27 Haflong Detour fully operational with normal transit conditions."
+    },
+    "C3": {
+      "status": "ALL_CLEAR",
+      "is_blocked": false,
+      "advisory": "NH-27 West static reference lifeline route normal."
+    }
+  }
+}
